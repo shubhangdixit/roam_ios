@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>443654932720-gls22v2t5kg22fmf32rs32kn9sa2i7mj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.443654932720-gls22v2t5kg22fmf32rs32kn9sa2i7mj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZzfNWN6vY2w1vsuKcfjbn1lqN3Nz8sFM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>443654932720</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.shubhang.roam-ios</string>
+	<key>PROJECT_ID</key>
+	<string>my-roam-ios-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-roam-ios-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:443654932720:ios:bd81184cd3369e86</string>
+	<key>DATABASE_URL</key>
+	<string>https://my-roam-ios-app.firebaseio.com</string>
+</dict>
+</plist>
