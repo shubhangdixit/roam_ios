@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8EA088E42428A7F67A1899 /* Pods_roam_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97280DD91DEAD36FA845E23 /* Pods_roam_iosUITests.framework */; };
 		2103B8DB22A8171B009C7F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103B8DA22A8171B009C7F54 /* AppDelegate.swift */; };
 		2103B8DD22A8171B009C7F54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103B8DC22A8171B009C7F54 /* ViewController.swift */; };
 		2103B8E022A8171B009C7F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2103B8DE22A8171B009C7F54 /* Main.storyboard */; };
@@ -14,9 +15,20 @@
 		2103B8E522A8171E009C7F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2103B8E322A8171E009C7F54 /* LaunchScreen.storyboard */; };
 		2103B8F022A8171F009C7F54 /* roam_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103B8EF22A8171F009C7F54 /* roam_iosTests.swift */; };
 		2103B8FB22A8171F009C7F54 /* roam_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103B8FA22A8171F009C7F54 /* roam_iosUITests.swift */; };
+		21178F2C22A9424E001103F4 /* HomeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178F2B22A9424E001103F4 /* HomeMenuViewModel.swift */; };
+		21178F3122A99EC7001103F4 /* SearchBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3022A99EC7001103F4 /* SearchBarCell.xib */; };
+		21178F3322A9A0E2001103F4 /* SearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178F3222A9A0E2001103F4 /* SearchBarCell.swift */; };
+		21178F3522A9A33A001103F4 /* MenuOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */; };
+		21178F3B22A9A682001103F4 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3722A9A646001103F4 /* Montserrat-Black.otf */; };
+		21178F3C22A9A685001103F4 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3822A9A654001103F4 /* Montserrat-Light.otf */; };
+		21178F3D22A9A688001103F4 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3922A9A66B001103F4 /* Montserrat-Medium.otf */; };
+		21178F3E22A9A68B001103F4 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3A22A9A67B001103F4 /* Montserrat-Bold.otf */; };
+		21178F4022A9AB0C001103F4 /* MenuOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */; };
 		21D50A5922A83D06003650C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A5822A83D06003650C5 /* GoogleService-Info.plist */; };
 		21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D50A6422A8416E003650C5 /* HomeViewController.swift */; };
 		21D50A6922A85142003650C5 /* defaultImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A6822A85142003650C5 /* defaultImage.jpeg */; };
+		3403DD1593B207EB87485F68 /* Pods_roam_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1EBC72F2E2F4EE3BBED35D /* Pods_roam_ios.framework */; };
+		3AF73FCD16CEEBFFA5201168 /* Pods_roam_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF50D8FFDB0BD194F633C74C /* Pods_roam_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +62,27 @@
 		2103B8F622A8171F009C7F54 /* roam_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roam_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2103B8FA22A8171F009C7F54 /* roam_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roam_iosUITests.swift; sourceTree = "<group>"; };
 		2103B8FC22A8171F009C7F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21178F2B22A9424E001103F4 /* HomeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewModel.swift; sourceTree = "<group>"; };
+		21178F3022A99EC7001103F4 /* SearchBarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarCell.xib; sourceTree = "<group>"; };
+		21178F3222A9A0E2001103F4 /* SearchBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCell.swift; sourceTree = "<group>"; };
+		21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuOptionsCell.xib; sourceTree = "<group>"; };
+		21178F3722A9A646001103F4 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		21178F3822A9A654001103F4 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		21178F3922A9A66B001103F4 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		21178F3A22A9A67B001103F4 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsCell.swift; sourceTree = "<group>"; };
 		21D50A5822A83D06003650C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21D50A6422A8416E003650C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "View Controllers/HomeViewController.swift"; sourceTree = "<group>"; };
 		21D50A6822A85142003650C5 /* defaultImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultImage.jpeg; sourceTree = "<group>"; };
+		294AE618426979C4E63A441A /* Pods-roam_iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roam_iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-roam_iosTests/Pods-roam_iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		986CF411EB3F73BC071D09A0 /* Pods-roam_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roam_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roam_iosUITests/Pods-roam_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B97280DD91DEAD36FA845E23 /* Pods_roam_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roam_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1EBC72F2E2F4EE3BBED35D /* Pods_roam_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roam_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEF1F8C25D2E350474C25B6 /* Pods-roam_iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roam_iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roam_iosTests/Pods-roam_iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF50D8FFDB0BD194F633C74C /* Pods_roam_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_roam_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA4FDAC51480F2DB776B7B7 /* Pods-roam_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roam_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-roam_ios/Pods-roam_ios.release.xcconfig"; sourceTree = "<group>"; };
+		F42F3025D019243051B8266D /* Pods-roam_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roam_iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-roam_iosUITests/Pods-roam_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7B751F5122C93B394277593 /* Pods-roam_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roam_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roam_ios/Pods-roam_ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3403DD1593B207EB87485F68 /* Pods_roam_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF73FCD16CEEBFFA5201168 /* Pods_roam_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8EA088E42428A7F67A1899 /* Pods_roam_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +120,8 @@
 				2103B8EE22A8171F009C7F54 /* roam_iosTests */,
 				2103B8F922A8171F009C7F54 /* roam_iosUITests */,
 				2103B8D822A8171B009C7F54 /* Products */,
+				E5E48A23B8F5F4214D46CC4E /* Pods */,
+				7250A8E01AE7D9728B4FDC17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +138,9 @@
 		2103B8D922A8171B009C7F54 /* roam_ios */ = {
 			isa = PBXGroup;
 			children = (
+				21178F3622A9A632001103F4 /* Fonts */,
+				21178F2D22A99DA9001103F4 /* TableViewCells */,
+				21178F2A22A94212001103F4 /* View Models */,
 				21D50A6822A85142003650C5 /* defaultImage.jpeg */,
 				2103B8DA22A8171B009C7F54 /* AppDelegate.swift */,
 				2103B8DC22A8171B009C7F54 /* ViewController.swift */,
@@ -134,6 +172,59 @@
 			path = roam_iosUITests;
 			sourceTree = "<group>";
 		};
+		21178F2A22A94212001103F4 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				21178F2B22A9424E001103F4 /* HomeMenuViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		21178F2D22A99DA9001103F4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				21178F3022A99EC7001103F4 /* SearchBarCell.xib */,
+				21178F3222A9A0E2001103F4 /* SearchBarCell.swift */,
+				21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */,
+				21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		21178F3622A9A632001103F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				21178F3722A9A646001103F4 /* Montserrat-Black.otf */,
+				21178F3822A9A654001103F4 /* Montserrat-Light.otf */,
+				21178F3922A9A66B001103F4 /* Montserrat-Medium.otf */,
+				21178F3A22A9A67B001103F4 /* Montserrat-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7250A8E01AE7D9728B4FDC17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD1EBC72F2E2F4EE3BBED35D /* Pods_roam_ios.framework */,
+				BF50D8FFDB0BD194F633C74C /* Pods_roam_iosTests.framework */,
+				B97280DD91DEAD36FA845E23 /* Pods_roam_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5E48A23B8F5F4214D46CC4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7B751F5122C93B394277593 /* Pods-roam_ios.debug.xcconfig */,
+				BFA4FDAC51480F2DB776B7B7 /* Pods-roam_ios.release.xcconfig */,
+				BDEF1F8C25D2E350474C25B6 /* Pods-roam_iosTests.debug.xcconfig */,
+				294AE618426979C4E63A441A /* Pods-roam_iosTests.release.xcconfig */,
+				986CF411EB3F73BC071D09A0 /* Pods-roam_iosUITests.debug.xcconfig */,
+				F42F3025D019243051B8266D /* Pods-roam_iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2103B8FF22A8171F009C7F54 /* Build configuration list for PBXNativeTarget "roam_ios" */;
 			buildPhases = (
+				0E9E731D11B517808F010B04 /* [CP] Check Pods Manifest.lock */,
 				2103B8D322A8171B009C7F54 /* Sources */,
 				2103B8D422A8171B009C7F54 /* Frameworks */,
 				2103B8D522A8171B009C7F54 /* Resources */,
+				2D100560A13762536305439E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2103B90222A8171F009C7F54 /* Build configuration list for PBXNativeTarget "roam_iosTests" */;
 			buildPhases = (
+				494C4E73B28CE844649D86B3 /* [CP] Check Pods Manifest.lock */,
 				2103B8E722A8171F009C7F54 /* Sources */,
 				2103B8E822A8171F009C7F54 /* Frameworks */,
 				2103B8E922A8171F009C7F54 /* Resources */,
@@ -176,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2103B90522A8171F009C7F54 /* Build configuration list for PBXNativeTarget "roam_iosUITests" */;
 			buildPhases = (
+				033F58BFC2E355DC29867239 /* [CP] Check Pods Manifest.lock */,
 				2103B8F222A8171F009C7F54 /* Sources */,
 				2103B8F322A8171F009C7F54 /* Frameworks */,
 				2103B8F422A8171F009C7F54 /* Resources */,
@@ -239,10 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2103B8E522A8171E009C7F54 /* LaunchScreen.storyboard in Resources */,
+				21178F3D22A9A688001103F4 /* Montserrat-Medium.otf in Resources */,
+				21178F3522A9A33A001103F4 /* MenuOptionsCell.xib in Resources */,
 				21D50A5922A83D06003650C5 /* GoogleService-Info.plist in Resources */,
 				2103B8E222A8171E009C7F54 /* Assets.xcassets in Resources */,
+				21178F3B22A9A682001103F4 /* Montserrat-Black.otf in Resources */,
 				2103B8E022A8171B009C7F54 /* Main.storyboard in Resources */,
 				21D50A6922A85142003650C5 /* defaultImage.jpeg in Resources */,
+				21178F3122A99EC7001103F4 /* SearchBarCell.xib in Resources */,
+				21178F3C22A9A685001103F4 /* Montserrat-Light.otf in Resources */,
+				21178F3E22A9A68B001103F4 /* Montserrat-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,13 +363,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		033F58BFC2E355DC29867239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-roam_iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E9E731D11B517808F010B04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-roam_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D100560A13762536305439E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-roam_ios/Pods-roam_ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roam_ios/Pods-roam_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		494C4E73B28CE844649D86B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-roam_iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2103B8D322A8171B009C7F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21178F2C22A9424E001103F4 /* HomeMenuViewModel.swift in Sources */,
 				2103B8DD22A8171B009C7F54 /* ViewController.swift in Sources */,
 				2103B8DB22A8171B009C7F54 /* AppDelegate.swift in Sources */,
+				21178F4022A9AB0C001103F4 /* MenuOptionsCell.swift in Sources */,
+				21178F3322A9A0E2001103F4 /* SearchBarCell.swift in Sources */,
 				21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +629,7 @@
 		};
 		2103B90022A8171F009C7F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B751F5122C93B394277593 /* Pods-roam_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +647,7 @@
 		};
 		2103B90122A8171F009C7F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA4FDAC51480F2DB776B7B7 /* Pods-roam_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +665,7 @@
 		};
 		2103B90322A8171F009C7F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDEF1F8C25D2E350474C25B6 /* Pods-roam_iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +686,7 @@
 		};
 		2103B90422A8171F009C7F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294AE618426979C4E63A441A /* Pods-roam_iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +707,7 @@
 		};
 		2103B90622A8171F009C7F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986CF411EB3F73BC071D09A0 /* Pods-roam_iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +727,7 @@
 		};
 		2103B90722A8171F009C7F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42F3025D019243051B8266D /* Pods-roam_iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

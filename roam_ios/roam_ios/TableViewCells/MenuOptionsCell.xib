@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuOptionsCell" rowHeight="74" id="bNd-FX-o0P" customClass="MenuOptionsCell" customModule="roam_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bNd-FX-o0P" id="lJw-Mr-OOK">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-Uy-k9n">
+                        <rect key="frame" x="20" y="17" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="OaH-IH-gKn"/>
+                            <constraint firstAttribute="height" constant="40" id="cCB-wf-pta"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew7-bk-eWe">
+                        <rect key="frame" x="80" y="11" width="83" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="N4M-5V-dYJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for your perfect destination for get away." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-uM-XlO">
+                        <rect key="frame" x="80" y="36" width="283" height="15"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
+                        <color key="textColor" red="0.31372549019607843" green="0.48627450980392156" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yzN-Uy-k9n" firstAttribute="centerY" secondItem="lJw-Mr-OOK" secondAttribute="centerY" id="5LL-9T-ywj"/>
+                    <constraint firstItem="kAg-uM-XlO" firstAttribute="top" secondItem="lJw-Mr-OOK" secondAttribute="top" constant="36" id="IvS-DI-lBL"/>
+                    <constraint firstItem="kAg-uM-XlO" firstAttribute="leading" secondItem="yzN-Uy-k9n" secondAttribute="trailing" constant="20" id="NYL-1N-j4G"/>
+                    <constraint firstItem="ew7-bk-eWe" firstAttribute="leading" secondItem="yzN-Uy-k9n" secondAttribute="trailing" constant="20" id="Rwf-DQ-vZQ"/>
+                    <constraint firstAttribute="bottom" secondItem="kAg-uM-XlO" secondAttribute="bottom" constant="22.5" id="XW1-pu-aBo"/>
+                    <constraint firstItem="yzN-Uy-k9n" firstAttribute="leading" secondItem="lJw-Mr-OOK" secondAttribute="leading" constant="20" id="aWM-xm-E2r"/>
+                    <constraint firstItem="ew7-bk-eWe" firstAttribute="top" secondItem="lJw-Mr-OOK" secondAttribute="top" constant="11" id="bsa-Ps-ni3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabelk" destination="kAg-uM-XlO" id="TKK-9D-2Jb"/>
+                <outlet property="image" destination="yzN-Uy-k9n" id="bEw-P5-3V7"/>
+                <outlet property="menuTitleLabel" destination="ew7-bk-eWe" id="M6J-YM-iwr"/>
+            </connections>
+            <point key="canvasLocation" x="-74" y="96"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="search" width="256" height="256"/>
+    </resources>
+</document>

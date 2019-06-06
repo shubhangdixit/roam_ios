@@ -1,0 +1,6 @@
+framework module Pods_roam_ios {
+  umbrella header "Pods-roam_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

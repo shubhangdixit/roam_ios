@@ -69,16 +69,16 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcx-md-OEG">
-                                <rect key="frame" x="0.0" y="46" width="414" height="630"/>
+                                <rect key="frame" x="0.0" y="35" width="414" height="641"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8vR-tn-0Xc" secondAttribute="bottom" constant="-184" id="1eX-DG-KC3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fcx-md-OEG" secondAttribute="bottom" constant="186" id="5C1-N9-lhW"/>
                             <constraint firstItem="8vR-tn-0Xc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="91r-RS-D5X"/>
-                            <constraint firstItem="fcx-md-OEG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="46" id="N0p-bx-2kW"/>
+                            <constraint firstItem="fcx-md-OEG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="N0p-bx-2kW"/>
                             <constraint firstItem="8vR-tn-0Xc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TGs-Uc-nIG"/>
+                            <constraint firstItem="8vR-tn-0Xc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="283" id="Whw-YZ-SSn"/>
                             <constraint firstItem="fcx-md-OEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XSO-fD-tp5"/>
                             <constraint firstItem="uhX-CG-pZt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b14-54-nzw"/>
                             <constraint firstItem="fcx-md-OEG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eeH-PK-weo"/>
@@ -89,6 +89,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WIE-ad-lC1"/>
                     <connections>
+                        <outlet property="optionsView" destination="8vR-tn-0Xc" id="bUK-wz-qOl"/>
                         <outlet property="previewImageView" destination="fcx-md-OEG" id="L6l-6g-Nn0"/>
                         <outlet property="topView" destination="nKE-tB-deG" id="VFV-bZ-XNF"/>
                     </connections>

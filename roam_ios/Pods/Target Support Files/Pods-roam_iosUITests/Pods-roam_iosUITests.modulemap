@@ -1,0 +1,6 @@
+framework module Pods_roam_iosUITests {
+  umbrella header "Pods-roam_iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
