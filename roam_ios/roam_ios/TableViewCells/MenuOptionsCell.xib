@@ -12,8 +12,8 @@
         <array key="Montserrat-Bold.otf">
             <string>Montserrat-Bold</string>
         </array>
-        <array key="Montserrat-Light.otf">
-            <string>Montserrat-Light</string>
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -26,43 +26,53 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-Uy-k9n">
-                        <rect key="frame" x="20" y="17" width="40" height="40"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-Uy-k9n">
+                        <rect key="frame" x="20" y="16.5" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="OaH-IH-gKn"/>
-                            <constraint firstAttribute="height" constant="40" id="cCB-wf-pta"/>
+                            <constraint firstAttribute="width" constant="35" id="OaH-IH-gKn"/>
+                            <constraint firstAttribute="height" constant="35" id="cCB-wf-pta"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew7-bk-eWe">
-                        <rect key="frame" x="80" y="11" width="83" height="29"/>
+                        <rect key="frame" x="75" y="11" width="82.5" height="29"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="29" id="N4M-5V-dYJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="23"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for your perfect destination for get away." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-uM-XlO">
-                        <rect key="frame" x="80" y="36" width="283" height="15"/>
-                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
+                        <rect key="frame" x="75" y="38" width="268" height="15"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
                         <color key="textColor" red="0.31372549019607843" green="0.48627450980392156" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mor-Lo-13E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FYU-PY-zgf"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="yzN-Uy-k9n" firstAttribute="centerY" secondItem="lJw-Mr-OOK" secondAttribute="centerY" id="5LL-9T-ywj"/>
-                    <constraint firstItem="kAg-uM-XlO" firstAttribute="top" secondItem="lJw-Mr-OOK" secondAttribute="top" constant="36" id="IvS-DI-lBL"/>
+                    <constraint firstItem="yzN-Uy-k9n" firstAttribute="centerY" secondItem="lJw-Mr-OOK" secondAttribute="centerY" constant="-2.75" id="5LL-9T-ywj"/>
+                    <constraint firstItem="kAg-uM-XlO" firstAttribute="top" secondItem="lJw-Mr-OOK" secondAttribute="top" constant="38" id="IvS-DI-lBL"/>
                     <constraint firstItem="kAg-uM-XlO" firstAttribute="leading" secondItem="yzN-Uy-k9n" secondAttribute="trailing" constant="20" id="NYL-1N-j4G"/>
                     <constraint firstItem="ew7-bk-eWe" firstAttribute="leading" secondItem="yzN-Uy-k9n" secondAttribute="trailing" constant="20" id="Rwf-DQ-vZQ"/>
-                    <constraint firstAttribute="bottom" secondItem="kAg-uM-XlO" secondAttribute="bottom" constant="22.5" id="XW1-pu-aBo"/>
+                    <constraint firstAttribute="bottom" secondItem="kAg-uM-XlO" secondAttribute="bottom" constant="20.5" id="XW1-pu-aBo"/>
                     <constraint firstItem="yzN-Uy-k9n" firstAttribute="leading" secondItem="lJw-Mr-OOK" secondAttribute="leading" constant="20" id="aWM-xm-E2r"/>
                     <constraint firstItem="ew7-bk-eWe" firstAttribute="top" secondItem="lJw-Mr-OOK" secondAttribute="top" constant="11" id="bsa-Ps-ni3"/>
+                    <constraint firstItem="mor-Lo-13E" firstAttribute="leading" secondItem="lJw-Mr-OOK" secondAttribute="leading" id="iek-Bq-3NG"/>
+                    <constraint firstAttribute="trailing" secondItem="mor-Lo-13E" secondAttribute="trailing" id="owU-QV-eB8"/>
+                    <constraint firstItem="mor-Lo-13E" firstAttribute="top" secondItem="lJw-Mr-OOK" secondAttribute="top" id="zhK-fa-jW9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabelk" destination="kAg-uM-XlO" id="TKK-9D-2Jb"/>
-                <outlet property="image" destination="yzN-Uy-k9n" id="bEw-P5-3V7"/>
                 <outlet property="menuTitleLabel" destination="ew7-bk-eWe" id="M6J-YM-iwr"/>
+                <outlet property="optionsImage" destination="yzN-Uy-k9n" id="2of-q0-NWS"/>
             </connections>
             <point key="canvasLocation" x="-74" y="96"/>
         </tableViewCell>

@@ -11,7 +11,7 @@ import UIKit
 
 class MenuOptionsCell: UITableViewCell {
     
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var optionsImage: UIImageView!
     @IBOutlet weak var menuTitleLabel: UILabel!
     @IBOutlet weak var descriptionLabelk: UILabel!
     
@@ -24,5 +24,7 @@ class MenuOptionsCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
+    
+    
 }
 

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 public enum HomeOptionType : CaseIterable {
     case search, shop, cart, signIn
     
@@ -15,12 +17,39 @@ public enum HomeOptionType : CaseIterable {
         case .search:
             return "Search"
         case .shop:
-            return "Deals"
+            return "Explore Locations"
         case .cart:
             return "Cart"
         case .signIn:
             return "Login"
         }
+    }
+    
+    func getDetailMessage () -> String {
+        switch self {
+        case .search:
+            return "Search for your perfect destination for next getaway."
+        case .shop:
+            return "Choose from our featured locations"
+        case .cart:
+            return "Check your cart and procced to checkout"
+        case .signIn:
+            return "Login / logout"
+        }
+    }
+    
+    func imageForOption () -> UIImage? {
+        switch self {
+        case .search:
+            return UIImage(named: "search")
+        case .shop:
+            return UIImage(named: "locationIcon")
+        case .cart:
+            return UIImage(named: "shoppingCartIcon")
+        case .signIn:
+            return UIImage(named: "user")
+            
+        }        
     }
     
     func getControllerName() -> String {

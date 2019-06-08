@@ -16,7 +16,6 @@
 		2103B8F022A8171F009C7F54 /* roam_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103B8EF22A8171F009C7F54 /* roam_iosTests.swift */; };
 		2103B8FB22A8171F009C7F54 /* roam_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103B8FA22A8171F009C7F54 /* roam_iosUITests.swift */; };
 		21178F2C22A9424E001103F4 /* HomeMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178F2B22A9424E001103F4 /* HomeMenuViewModel.swift */; };
-		21178F3122A99EC7001103F4 /* SearchBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3022A99EC7001103F4 /* SearchBarCell.xib */; };
 		21178F3322A9A0E2001103F4 /* SearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178F3222A9A0E2001103F4 /* SearchBarCell.swift */; };
 		21178F3522A9A33A001103F4 /* MenuOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */; };
 		21178F3B22A9A682001103F4 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3722A9A646001103F4 /* Montserrat-Black.otf */; };
@@ -63,7 +62,6 @@
 		2103B8FA22A8171F009C7F54 /* roam_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roam_iosUITests.swift; sourceTree = "<group>"; };
 		2103B8FC22A8171F009C7F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21178F2B22A9424E001103F4 /* HomeMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewModel.swift; sourceTree = "<group>"; };
-		21178F3022A99EC7001103F4 /* SearchBarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarCell.xib; sourceTree = "<group>"; };
 		21178F3222A9A0E2001103F4 /* SearchBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarCell.swift; sourceTree = "<group>"; };
 		21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuOptionsCell.xib; sourceTree = "<group>"; };
 		21178F3722A9A646001103F4 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 		21178F2D22A99DA9001103F4 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				21178F3022A99EC7001103F4 /* SearchBarCell.xib */,
 				21178F3222A9A0E2001103F4 /* SearchBarCell.swift */,
 				21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */,
 				21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */,
@@ -341,7 +338,6 @@
 				21178F3B22A9A682001103F4 /* Montserrat-Black.otf in Resources */,
 				2103B8E022A8171B009C7F54 /* Main.storyboard in Resources */,
 				21D50A6922A85142003650C5 /* defaultImage.jpeg in Resources */,
-				21178F3122A99EC7001103F4 /* SearchBarCell.xib in Resources */,
 				21178F3C22A9A685001103F4 /* Montserrat-Light.otf in Resources */,
 				21178F3E22A9A68B001103F4 /* Montserrat-Bold.otf in Resources */,
 			);
