@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var previewImageView: UIImageView!
@@ -25,10 +25,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var optionsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let titleString = "ROAM"
-        self.navigationController?.navigationBar.topItem?.title = titleString
-        setupGradientLayer()
+     
+        setupGradientLayer(topView: topView, previewImageView: previewImageView)
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panAction(_:)))
         
         panView.isUserInteractionEnabled = true
@@ -38,6 +36,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         menuTableView.register(UINib(nibName: "MenuOptionsCell", bundle: Bundle.main), forCellReuseIdentifier: "MenuOptionsCell")
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        setScreenName(titleString: "ROAM")
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         menuView.layer.cornerRadius = 10
@@ -45,20 +49,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         menuView.layer.shadowOpacity = 1
         menuView.layer.shadowOffset = CGSize(width: 0, height: 5)
         menuView.layer.shadowRadius = 15
-    }
-    
-    private func setupGradientLayer () {
-        let gradient = CAGradientLayer()
-        
-        gradient.frame = topView.bounds
-        gradient.colors = [
-            UIColor.black.cgColor,
-            UIColor.init(white: 0, alpha: 0).cgColor
-        ]
-        topView.backgroundColor = .clear
-        topView.layer.insertSublayer(gradient, at: 0)
-        previewImageView.image = UIImage(named: "defaultImage.jpeg")
-        view.sendSubviewToBack(previewImageView)
     }
     
     
@@ -100,6 +90,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else {
             let cell = menuTableView.dequeueReusableCell(withIdentifier: "exploreCell")!
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controllerName = HomeOptionType.allCases[indexPath.row].getControllerName()
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: controllerName){
+            
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
     

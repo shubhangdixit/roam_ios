@@ -53,7 +53,17 @@ public enum HomeOptionType : CaseIterable {
     }
     
     func getControllerName() -> String {
-        return ""
+        switch self {
+        case .search:
+            return "SignInViewController"
+        case .shop:
+            return "SignInViewController"
+        case .cart:
+            return "SignInViewController"
+        case .signIn:
+            return "SignInViewController"
+            
+        }      
     }
 }
 
