@@ -25,7 +25,7 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var optionsView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
         setupGradientLayer(topView: topView, previewImageView: previewImageView)
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panAction(_:)))
         
@@ -38,8 +38,8 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         setScreenName(titleString: "ROAM")
+        if mainMenuIsExpanded() { expandMenuView() }
     }
     
     override func viewDidLayoutSubviews() {
@@ -62,16 +62,59 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
             }
         }
         if sender.state == .ended {
-            UIView.animate(withDuration: 30, delay: 0, options: .curveEaseOut, animations: {
-                self.menuViewHeightConstraint.constant = self.menuViewHeightConstraint.constant > 300 ? 600 : 235
-                 self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant > 300 ? "HOME" : "ROAM"
+            view.setNeedsUpdateConstraints()
+            UIView.animate(withDuration: 7, animations: {
+                
+                self.view.layoutIfNeeded()
+            }) { finished in
+                self.menuViewHeightConstraint.constant = self.menuViewHeightConstraint.constant > 300 ? 235 : 600
+                self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant > 300 ? "ROAM" : "HOME"
                 self.menuTableView.reloadData()
-            }, completion: nil)
+                UIView.animate(withDuration: 0.25, animations: {
+                    
+                    self.view.layoutIfNeeded()
+                }) { finished in
+                }
+            }
+        }
+    }
+    
+    func expandMenuView () {
+        
+        view.setNeedsUpdateConstraints()
+        UIView.animate(withDuration: 7, animations: {
+            
+            self.view.layoutIfNeeded()
+        }) { finished in
+            self.menuViewHeightConstraint.constant = self.menuViewHeightConstraint.constant == 600 ? 235 : 600
+            self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant == 600 ? "ROAM" : "HOME"
+            self.menuTableView.reloadData()
+            UIView.animate(withDuration: 0.25, animations: {
+                
+                self.view.layoutIfNeeded()
+            }) { finished in
+                
+            }
         }
     }
     
     func mainMenuIsExpanded() -> Bool {
         return menuViewHeightConstraint.constant == 235 ? false : true
+    }
+    
+    func signOut() {
+        let alertMsg = AlertMesseges.logoutALert
+        showPermissionAlert(self, strtittle: alertMsg.rawValue, message: alertMsg.getMessage(), actionTittle: "Continue"){
+            NetworkManager.shared.signOut(success: {[weak self] (data) in
+                if let success = data as? Bool {
+                    if !success {
+                        self?.showAlertMsg(title: "", message: "Error Logging you out.")
+                    } else {
+                        self?.expandMenuView()
+                    }
+                }
+            })
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -94,11 +137,20 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controllerName = HomeOptionType.allCases[indexPath.row].getControllerName()
-        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: controllerName){
-            
-            self.navigationController?.pushViewController(viewController, animated: true)
+        if mainMenuIsExpanded() {
+            let controllerName = HomeOptionType.allCases[indexPath.row].getControllerName()
+            if controllerName == "" {
+                signOut()
+                return
+            }
+            if let viewController = self.storyboard?.instantiateViewController(withIdentifier: controllerName){
+                
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        } else {
+            expandMenuView()
         }
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

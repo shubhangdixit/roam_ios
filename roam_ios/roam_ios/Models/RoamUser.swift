@@ -20,8 +20,8 @@ enum RoamCities : String {
     static let allValues = [bangalore, delhi, chennai, kolkata, lucknow, ahmadabad, mumbai, nagpur, pune, trivendrum, kanyakumari, jammuCity, none]
 }
 
-public enum Gender : Character {
-    case male = "M", female = "F", undisclosed = "T"
+public enum Gender : Int {
+    case male = 1, female = 2, undisclosed = 3
 }
 
 class RoamUser: NSObject {
@@ -61,7 +61,7 @@ class RoamUser: NSObject {
                 if let city = dictionary["city"] as? String {
                     self?.usercity = RoamCities.init(rawValue: city) ?? .none
                 }
-                if let gender = dictionary["gender"] as? Character {
+                if let gender = dictionary["gender"] as? Int {
                     self?.gender = Gender.init(rawValue: gender) ?? .undisclosed
                 }
             }

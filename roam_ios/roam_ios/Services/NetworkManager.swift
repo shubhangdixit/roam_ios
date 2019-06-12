@@ -34,6 +34,30 @@ class NetworkManager {
         })
     }
     
+    func updateUser(uid: String?, city : String, gender : Gender , success: @escaping successBlock, failure: @escaping failureBlock) {
+        guard let uid = uid else {
+            failure()
+            return
+        }
+        let dictionary = ["city" : city, "gender" : gender.rawValue] as [String : Any]
+        ref.child("users").child(uid).setValue(dictionary)
+        success(true)
+    }
+    
+    func signOut(success: @escaping successBlock) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            UserDefaults.standard.set(nil, forKey: userIdUserDefaultKey)
+            UserDefaults.standard.set(nil, forKey: userNameUserDefaultKey)
+            success(true)
+        } catch let signOutError as NSError {
+            print(signOutError)
+            success(false)
+        }
+    }
+    
+    
 //    
 //    static func initialiseDatabaseForGoogleSignIn() {
 //        guard let uid = UserDefaults.standard.string(forKey: userIdUserDefaultKey) else { return }

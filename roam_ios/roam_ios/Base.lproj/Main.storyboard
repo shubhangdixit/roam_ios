@@ -289,6 +289,9 @@
                                                 <state key="normal" title="SIGN IN">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInButtonAction:" destination="Nlw-zc-LRT" eventType="touchUpInside" id="FEN-2e-wRL"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter your Email Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-Aw-Jg9">
                                                 <rect key="frame" x="471" y="21" width="308" height="22"/>
@@ -307,6 +310,9 @@
                                                 <state key="normal" title="SIGN UP">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpButtonAction:" destination="Nlw-zc-LRT" eventType="touchUpInside" id="KVf-SL-AqN"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-KZ-IPd">
                                                 <rect key="frame" x="471" y="135" width="81" height="21"/>
@@ -438,7 +444,7 @@
                                             <constraint firstItem="5Sh-Ng-Nwd" firstAttribute="leading" secondItem="zww-OF-ZDI" secondAttribute="trailing" constant="56.5" id="FmU-vf-7ga"/>
                                             <constraint firstItem="U2B-Zx-AGy" firstAttribute="leading" secondItem="HVW-Gj-n5C" secondAttribute="trailing" constant="320" id="G73-e8-hpd"/>
                                             <constraint firstAttribute="bottom" secondItem="zww-OF-ZDI" secondAttribute="bottom" constant="48" id="G8d-pP-U1c"/>
-                                            <constraint firstItem="Hba-Z3-i5p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zww-OF-ZDI" secondAttribute="trailing" symbolic="YES" id="GBJ-DL-r9c"/>
+                                            <constraint firstItem="Hba-Z3-i5p" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zww-OF-ZDI" secondAttribute="trailing" constant="8" symbolic="YES" id="GBJ-DL-r9c"/>
                                             <constraint firstItem="zww-OF-ZDI" firstAttribute="leading" secondItem="ha8-fX-M14" secondAttribute="trailing" constant="48.5" id="J9p-py-jaR"/>
                                             <constraint firstItem="OYu-Gx-MQY" firstAttribute="width" secondItem="fVp-dn-wom" secondAttribute="width" id="JhD-YV-jOJ"/>
                                             <constraint firstItem="ha8-fX-M14" firstAttribute="top" secondItem="kBV-as-bd2" secondAttribute="bottom" constant="45" id="Jt5-jv-DHo"/>
@@ -508,6 +514,11 @@
                         <outlet property="menuView" destination="fdt-fv-doT" id="PNw-H8-mX4"/>
                         <outlet property="menuViewLeadingConstraint" destination="NFv-h7-5vi" id="stG-XP-IaB"/>
                         <outlet property="menuViewTrailingConstraint" destination="8cI-uv-Wi9" id="4UP-Cf-BtR"/>
+                        <outlet property="signInEmailTextField" destination="IYC-Uh-qwK" id="cwc-ma-7GM"/>
+                        <outlet property="signInPasswordTextField" destination="axb-cy-QU1" id="Y0M-ry-g29"/>
+                        <outlet property="signUpEmailTextField" destination="xfc-Aw-Jg9" id="Lzk-hN-q5m"/>
+                        <outlet property="signUpPasswordTextField" destination="5Sh-Ng-Nwd" id="5tX-Wk-p4h"/>
+                        <outlet property="signUpUserNameTextField" destination="fVp-dn-wom" id="hi9-bd-kTi"/>
                         <outlet property="topView" destination="FKT-bd-Ac2" id="Jw1-lK-1Ic"/>
                     </connections>
                 </viewController>

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 public enum HomeOptionType : CaseIterable {
     case search, shop, cart, signIn
@@ -21,7 +22,11 @@ public enum HomeOptionType : CaseIterable {
         case .cart:
             return "Cart"
         case .signIn:
-            return "Login"
+            if Auth.auth().currentUser != nil {
+                return "Sign Out"
+            } else {
+                return "SignIn/ SignUp"
+            }
         }
     }
     
@@ -61,8 +66,11 @@ public enum HomeOptionType : CaseIterable {
         case .cart:
             return "SignInViewController"
         case .signIn:
-            return "SignInViewController"
-            
+            if Auth.auth().currentUser != nil {
+                return ""
+            } else {
+                return "SignInViewController"
+            }
         }      
     }
 }

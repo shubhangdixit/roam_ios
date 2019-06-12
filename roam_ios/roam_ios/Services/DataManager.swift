@@ -24,5 +24,22 @@ class DataManager {
         rUser = user
     }
     
+    func registerUser(user: User, userName : String, gender : Gender) {
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = userName
+        changeRequest?.commitChanges {[weak self] (error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                let user = RoamUser.init(firUser: user)
+                self?.rUser = user
+                NetworkManager.shared.updateUser(uid: user.userId, city: RoamCities.none.rawValue, gender: gender, success: { (success) in
+                    print("User updated successfully")
+                }, failure: { })
+            }
+        }
+    }
+    
+
     
 }
