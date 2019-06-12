@@ -484,13 +484,23 @@
                                             <constraint firstAttribute="trailing" secondItem="xfc-Aw-Jg9" secondAttribute="trailing" constant="49" id="xlu-c0-4E8"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h7-Nt-Rmm" customClass="GIDSignInButton">
+                                        <rect key="frame" x="58" y="372" width="308" height="62"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="yoI-nu-hV9"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6h7-Nt-Rmm" secondAttribute="trailing" constant="48" id="895-fX-Gwm"/>
                                     <constraint firstAttribute="trailing" secondItem="wzG-gh-6dF" secondAttribute="trailing" constant="-414" id="8cI-uv-Wi9"/>
+                                    <constraint firstItem="6h7-Nt-Rmm" firstAttribute="top" secondItem="wzG-gh-6dF" secondAttribute="bottom" constant="23" id="DiO-zB-fhu"/>
                                     <constraint firstItem="wzG-gh-6dF" firstAttribute="leading" secondItem="fdt-fv-doT" secondAttribute="leading" id="NFv-h7-5vi"/>
                                     <constraint firstItem="wzG-gh-6dF" firstAttribute="top" secondItem="fdt-fv-doT" secondAttribute="top" constant="26" id="OxY-57-AYC"/>
                                     <constraint firstAttribute="height" constant="500" id="n8S-UO-21Q"/>
+                                    <constraint firstItem="6h7-Nt-Rmm" firstAttribute="leading" secondItem="fdt-fv-doT" secondAttribute="leading" constant="58" id="xZm-Ha-x36"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -511,6 +521,7 @@
                     </view>
                     <connections>
                         <outlet property="bckgrndImageView" destination="fOV-MD-83V" id="Msm-8a-Tv2"/>
+                        <outlet property="googleSignInButton" destination="6h7-Nt-Rmm" id="btg-lJ-MVV"/>
                         <outlet property="menuView" destination="fdt-fv-doT" id="PNw-H8-mX4"/>
                         <outlet property="menuViewLeadingConstraint" destination="NFv-h7-5vi" id="stG-XP-IaB"/>
                         <outlet property="menuViewTrailingConstraint" destination="8cI-uv-Wi9" id="4UP-Cf-BtR"/>

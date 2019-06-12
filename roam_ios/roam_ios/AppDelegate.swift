@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         Auth.auth().signIn(with: credentials, completion: { (data, error) in
             
             if let firUser = data?.user {
-                    DataManager.shared.initialiseUser(user: firUser)
+                DataManager.shared.registerGoogleUser(user: firUser)
             } else {
                 //error signing in with google and registering new user
             }

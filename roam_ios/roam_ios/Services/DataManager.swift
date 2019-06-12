@@ -40,6 +40,15 @@ class DataManager {
         }
     }
     
+    func registerGoogleUser(user: User) {
+        let user = RoamUser.init(firUser: user)
+        rUser = user
+        NetworkManager.shared.updateGoogleUser(uid: user.userId
+            , city: RoamCities.none.rawValue, gender: Gender.undisclosed,  success: { (success) in
+                print("User updated successfully")
+        }, failure: { })
+    }
+    
 
     
 }

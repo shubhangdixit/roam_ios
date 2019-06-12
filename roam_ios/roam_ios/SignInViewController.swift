@@ -30,6 +30,7 @@ class SignInViewController: RoamBaseViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var menuViewTrailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var menuViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var googleSignInButton: GIDSignInButton!
     
     var signingStyle : RoamSigningStyle = .signIn
     
@@ -39,6 +40,7 @@ class SignInViewController: RoamBaseViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         setupGradientLayer(topView: topView, previewImageView: bckgrndImageView)
         GIDSignIn.sharedInstance().uiDelegate = self
+        setUpGoogleSignInButton()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,6 +55,13 @@ class SignInViewController: RoamBaseViewController, GIDSignInUIDelegate {
         menuView.layer.shadowOpacity = 1
         menuView.layer.shadowOffset = CGSize(width: 0, height: 5)
         menuView.layer.shadowRadius = 15
+    }
+    
+    func setUpGoogleSignInButton() {
+        
+        googleSignInButton.colorScheme = GIDSignInButtonColorScheme.light
+        googleSignInButton.style = .standard
+        googleSignInButton.accessibilityLabel = "Sign Up with Google"
     }
     
     

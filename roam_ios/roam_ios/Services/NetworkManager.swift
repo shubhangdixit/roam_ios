@@ -44,6 +44,23 @@ class NetworkManager {
         success(true)
     }
     
+    func updateGoogleUser(uid: String?, city : String, gender : Gender , success: @escaping successBlock, failure: @escaping failureBlock) {
+        guard let uid = uid else {
+            failure()
+            return
+        }
+        ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if snapshot.hasChild(uid){
+                //checking if google user DB exists
+                print(googleUserExists)
+                success(true)
+            } else {
+                self.updateUser(uid: uid, city: city, gender: gender, success: success, failure: failure)
+            }
+        })
+    }
+    
     func signOut(success: @escaping successBlock) {
         let firebaseAuth = Auth.auth()
         do {
