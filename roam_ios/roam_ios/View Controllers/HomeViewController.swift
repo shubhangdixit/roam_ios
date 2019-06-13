@@ -16,6 +16,7 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var menuViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var panView: UIView!
+    @IBOutlet weak var introLabel: UILabel!
     
     let kMenuViewMaximumHeight : CGFloat = 650.0
     let kMenuViewMinimumHeight : CGFloat = 200.0
@@ -38,7 +39,7 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        setScreenName(titleString: "ROAM")
+        setScreenName(titleString: " ")
         if mainMenuIsExpanded() { expandMenuView() }
     }
     
@@ -68,13 +69,17 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
                 self.view.layoutIfNeeded()
             }) { finished in
                 self.menuViewHeightConstraint.constant = self.menuViewHeightConstraint.constant > 300 ? 235 : 600
-                self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant > 300 ? "ROAM" : "HOME"
+                self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant > 300 ? "HOME" : " "
+                self.introLabel.alpha = 0
                 self.menuTableView.reloadData()
                 UIView.animate(withDuration: 0.25, animations: {
                     
                     self.view.layoutIfNeeded()
                 }) { finished in
                 }
+            }
+            UIView.animate(withDuration: 0.25) {
+                self.introLabel.alpha = 0
             }
         }
     }
@@ -87,7 +92,7 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
             self.view.layoutIfNeeded()
         }) { finished in
             self.menuViewHeightConstraint.constant = self.menuViewHeightConstraint.constant == 600 ? 235 : 600
-            self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant == 600 ? "ROAM" : "HOME"
+            self.navigationController?.navigationBar.topItem?.title = self.menuViewHeightConstraint.constant == 600 ? "HOME" : " "
             self.menuTableView.reloadData()
             UIView.animate(withDuration: 0.25, animations: {
                 
@@ -95,6 +100,9 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
             }) { finished in
                 
             }
+        }
+        UIView.animate(withDuration: 0.25) {
+            self.introLabel.alpha = 0
         }
     }
     

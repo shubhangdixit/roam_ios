@@ -24,6 +24,8 @@
 		21178F3E22A9A68B001103F4 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21178F3A22A9A67B001103F4 /* Montserrat-Bold.otf */; };
 		21178F4022A9AB0C001103F4 /* MenuOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */; };
 		21372F4222B0397A00BE4AAB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21372F4122B0397A00BE4AAB /* SignInViewController.swift */; };
+		21372F4422B148E600BE4AAB /* RoamProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21372F4322B148E600BE4AAB /* RoamProducts.swift */; };
+		21372F4622B1724B00BE4AAB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21372F4522B1724B00BE4AAB /* ProductCell.swift */; };
 		216108B022B01AA0007CFCD8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216108AF22B01AA0007CFCD8 /* DataManager.swift */; };
 		21889C5C22AD215A008C3001 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C5B22AD215A008C3001 /* ImageViewExtension.swift */; };
 		21889C5E22AD21C4008C3001 /* ExtensionForAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C5D22AD21C4008C3001 /* ExtensionForAlert.swift */; };
@@ -31,6 +33,8 @@
 		21889C6422AD27F1008C3001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C6322AD27F1008C3001 /* Constants.swift */; };
 		21889C6722AD2BA4008C3001 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C6622AD2BA4008C3001 /* NetworkManager.swift */; };
 		21889C6922AD2DF1008C3001 /* RoamBaseViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C6822AD2DF1008C3001 /* RoamBaseViewcontroller.swift */; };
+		21C5DB4022B17EBD00990D2D /* ProductListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */; };
+		21C5DB4222B1810A00990D2D /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB4122B1810A00990D2D /* ProgressHUD.swift */; };
 		21D50A5922A83D06003650C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A5822A83D06003650C5 /* GoogleService-Info.plist */; };
 		21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D50A6422A8416E003650C5 /* HomeViewController.swift */; };
 		21D50A6922A85142003650C5 /* defaultImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A6822A85142003650C5 /* defaultImage.jpeg */; };
@@ -78,6 +82,8 @@
 		21178F3A22A9A67B001103F4 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsCell.swift; sourceTree = "<group>"; };
 		21372F4122B0397A00BE4AAB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		21372F4322B148E600BE4AAB /* RoamProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamProducts.swift; sourceTree = "<group>"; };
+		21372F4522B1724B00BE4AAB /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		216108AF22B01AA0007CFCD8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		21889C5B22AD215A008C3001 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		21889C5D22AD21C4008C3001 /* ExtensionForAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForAlert.swift; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 		21889C6322AD27F1008C3001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		21889C6622AD2BA4008C3001 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		21889C6822AD2DF1008C3001 /* RoamBaseViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamBaseViewcontroller.swift; sourceTree = "<group>"; };
+		21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListsViewController.swift; sourceTree = "<group>"; };
+		21C5DB4122B1810A00990D2D /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
 		21D50A5822A83D06003650C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21D50A6422A8416E003650C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "View Controllers/HomeViewController.swift"; sourceTree = "<group>"; };
 		21D50A6822A85142003650C5 /* defaultImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultImage.jpeg; sourceTree = "<group>"; };
@@ -170,6 +178,7 @@
 				21D50A6422A8416E003650C5 /* HomeViewController.swift */,
 				21889C6822AD2DF1008C3001 /* RoamBaseViewcontroller.swift */,
 				21372F4122B0397A00BE4AAB /* SignInViewController.swift */,
+				21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */,
 			);
 			path = roam_ios;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 				21178F3222A9A0E2001103F4 /* SearchBarCell.swift */,
 				21178F3422A9A33A001103F4 /* MenuOptionsCell.xib */,
 				21178F3F22A9AB0C001103F4 /* MenuOptionsCell.swift */,
+				21372F4522B1724B00BE4AAB /* ProductCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -234,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				21889C6022AD222D008C3001 /* RoamUser.swift */,
+				21372F4322B148E600BE4AAB /* RoamProducts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				21889C6322AD27F1008C3001 /* Constants.swift */,
+				21C5DB4122B1810A00990D2D /* ProgressHUD.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -526,16 +538,20 @@
 			files = (
 				21372F4222B0397A00BE4AAB /* SignInViewController.swift in Sources */,
 				21178F2C22A9424E001103F4 /* HomeMenuViewModel.swift in Sources */,
+				21C5DB4222B1810A00990D2D /* ProgressHUD.swift in Sources */,
 				21889C5C22AD215A008C3001 /* ImageViewExtension.swift in Sources */,
 				2103B8DD22A8171B009C7F54 /* ViewController.swift in Sources */,
 				2103B8DB22A8171B009C7F54 /* AppDelegate.swift in Sources */,
+				21C5DB4022B17EBD00990D2D /* ProductListsViewController.swift in Sources */,
 				21889C6722AD2BA4008C3001 /* NetworkManager.swift in Sources */,
 				21178F4022A9AB0C001103F4 /* MenuOptionsCell.swift in Sources */,
 				21889C6422AD27F1008C3001 /* Constants.swift in Sources */,
 				21178F3322A9A0E2001103F4 /* SearchBarCell.swift in Sources */,
+				21372F4422B148E600BE4AAB /* RoamProducts.swift in Sources */,
 				21889C6922AD2DF1008C3001 /* RoamBaseViewcontroller.swift in Sources */,
 				21889C5E22AD21C4008C3001 /* ExtensionForAlert.swift in Sources */,
 				21889C6122AD222D008C3001 /* RoamUser.swift in Sources */,
+				21372F4622B1724B00BE4AAB /* ProductCell.swift in Sources */,
 				216108B022B01AA0007CFCD8 /* DataManager.swift in Sources */,
 				21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */,
 			);

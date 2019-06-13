@@ -62,7 +62,7 @@ public enum HomeOptionType : CaseIterable {
         case .search:
             return "SignInViewController"
         case .shop:
-            return "SignInViewController"
+            return "ProductListsViewController"
         case .cart:
             return "SignInViewController"
         case .signIn:

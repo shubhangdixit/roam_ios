@@ -49,6 +49,23 @@ class DataManager {
         }, failure: { })
     }
     
-
+    func getProductList(success: @escaping ([RoamProducts]) -> Void, failure :@escaping  () -> Void) {
+        var products : [RoamProducts] = []
+        NetworkManager.shared.fetchProductList(success: { (data) in
+            if let productLists = data as? [String : Any] {
+                for key in productLists.keys {
+                    if let productDict = productLists[key] as? [String : Any] {
+                    let product = RoamProducts(dictionary: productDict, productName: key)
+                    products.append(product)
+                    }
+                }
+                success(products)
+            } else {
+                failure()
+            }
+        }) {
+            failure()
+        }
+    }
     
 }
