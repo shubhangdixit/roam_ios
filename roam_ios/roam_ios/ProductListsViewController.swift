@@ -22,15 +22,11 @@ class ProductListsViewController: RoamBaseViewController, UITableViewDelegate, U
     
     var shouldFilter = false
     var products : [RoamProducts]?
-    var progressIndicator : ProgressHUD {
-        return ProgressHUD(text: "Loading")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         productTableView.delegate = self
         productTableView.dataSource = self
-        self.view.addSubview(progressIndicator)
         loadProductList()
     }
     
@@ -49,15 +45,15 @@ class ProductListsViewController: RoamBaseViewController, UITableViewDelegate, U
     }
     
     func loadProductList () {
-        progressIndicator.hide()
+        progressIndicator.startSpinner()
         DataManager.shared.getProductList(success: { (productList) in
             self.products = productList
             DispatchQueue.main.async {
                 self.productTableView.reloadData()
-                self.progressIndicator.hide()
+                self.progressIndicator.stopSpinner()
             }
         }) {
-            self.progressIndicator.hide()
+            self.progressIndicator.stopSpinner()
             self.showAlertMsg(title: "", message: "Error loading products")
         }
     }

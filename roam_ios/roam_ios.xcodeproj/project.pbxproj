@@ -34,7 +34,8 @@
 		21889C6722AD2BA4008C3001 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C6622AD2BA4008C3001 /* NetworkManager.swift */; };
 		21889C6922AD2DF1008C3001 /* RoamBaseViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21889C6822AD2DF1008C3001 /* RoamBaseViewcontroller.swift */; };
 		21C5DB4022B17EBD00990D2D /* ProductListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */; };
-		21C5DB4222B1810A00990D2D /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB4122B1810A00990D2D /* ProgressHUD.swift */; };
+		21C5DB4522B2352400990D2D /* ActivityIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C5DB4422B2352400990D2D /* ActivityIndicator.xib */; };
+		21C5DB4722B2360200990D2D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB4622B2360200990D2D /* ActivityIndicator.swift */; };
 		21D50A5922A83D06003650C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A5822A83D06003650C5 /* GoogleService-Info.plist */; };
 		21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D50A6422A8416E003650C5 /* HomeViewController.swift */; };
 		21D50A6922A85142003650C5 /* defaultImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A6822A85142003650C5 /* defaultImage.jpeg */; };
@@ -92,7 +93,8 @@
 		21889C6622AD2BA4008C3001 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		21889C6822AD2DF1008C3001 /* RoamBaseViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamBaseViewcontroller.swift; sourceTree = "<group>"; };
 		21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListsViewController.swift; sourceTree = "<group>"; };
-		21C5DB4122B1810A00990D2D /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		21C5DB4422B2352400990D2D /* ActivityIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicator.xib; sourceTree = "<group>"; };
+		21C5DB4622B2360200990D2D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		21D50A5822A83D06003650C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21D50A6422A8416E003650C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "View Controllers/HomeViewController.swift"; sourceTree = "<group>"; };
 		21D50A6822A85142003650C5 /* defaultImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultImage.jpeg; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 		21178F2A22A94212001103F4 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				21C5DB4322B234FE00990D2D /* New Group */,
 				21178F2B22A9424E001103F4 /* HomeMenuViewModel.swift */,
 			);
 			path = "View Models";
@@ -253,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				21889C6322AD27F1008C3001 /* Constants.swift */,
-				21C5DB4122B1810A00990D2D /* ProgressHUD.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -265,6 +267,15 @@
 				216108AF22B01AA0007CFCD8 /* DataManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		21C5DB4322B234FE00990D2D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				21C5DB4422B2352400990D2D /* ActivityIndicator.xib */,
+				21C5DB4622B2360200990D2D /* ActivityIndicator.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		7250A8E01AE7D9728B4FDC17 /* Frameworks */ = {
@@ -402,6 +413,7 @@
 				2103B8E522A8171E009C7F54 /* LaunchScreen.storyboard in Resources */,
 				21178F3D22A9A688001103F4 /* Montserrat-Medium.otf in Resources */,
 				21178F3522A9A33A001103F4 /* MenuOptionsCell.xib in Resources */,
+				21C5DB4522B2352400990D2D /* ActivityIndicator.xib in Resources */,
 				21D50A5922A83D06003650C5 /* GoogleService-Info.plist in Resources */,
 				2103B8E222A8171E009C7F54 /* Assets.xcassets in Resources */,
 				21178F3B22A9A682001103F4 /* Montserrat-Black.otf in Resources */,
@@ -538,7 +550,7 @@
 			files = (
 				21372F4222B0397A00BE4AAB /* SignInViewController.swift in Sources */,
 				21178F2C22A9424E001103F4 /* HomeMenuViewModel.swift in Sources */,
-				21C5DB4222B1810A00990D2D /* ProgressHUD.swift in Sources */,
+				21C5DB4722B2360200990D2D /* ActivityIndicator.swift in Sources */,
 				21889C5C22AD215A008C3001 /* ImageViewExtension.swift in Sources */,
 				2103B8DD22A8171B009C7F54 /* ViewController.swift in Sources */,
 				2103B8DB22A8171B009C7F54 /* AppDelegate.swift in Sources */,

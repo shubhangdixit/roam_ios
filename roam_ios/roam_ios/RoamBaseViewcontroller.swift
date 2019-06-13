@@ -12,12 +12,11 @@ import FirebaseStorage
 
 class RoamBaseViewController: UIViewController {
     
-    //let progressIndicator = ProgressIndicatorView.instantiateView()
-    
-    
+    let progressIndicator = ActivityIndicator.instantiateView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addSubview(progressIndicator)
     }
     
     override func didReceiveMemoryWarning() {
