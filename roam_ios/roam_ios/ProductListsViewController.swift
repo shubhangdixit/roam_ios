@@ -88,6 +88,10 @@ class ProductListsViewController: RoamBaseViewController, UITableViewDelegate, U
         }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
+        viewController.product = products?[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

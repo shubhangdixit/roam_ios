@@ -53,4 +53,26 @@ class RoamProducts : NSObject {
         }
         return ""
     }
+    
+    func getPeopleCountString () -> String {
+        if let people = maxPeople {
+            let peopleCount = "Maximum " + String(describing: people) + " people"
+            return peopleCount
+        }
+        return ""
+    }
+    
+    func getNumberOfDaysString () -> String {
+        let numberOfDays = String(describing: getNumberOfDays()) + " Days"
+        return numberOfDays
+    }
+    
+    func getZoneString () -> String {
+        if let zone = zone?.rawValue {
+            var zoneString = zone + " India"
+            zoneString = zoneString.capitalized
+            return zoneString
+        }
+        return ""
+    }
 }

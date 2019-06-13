@@ -101,13 +101,12 @@ class SignInViewController: RoamBaseViewController, GIDSignInUIDelegate {
     }
     
     @IBAction func signInButtonAction(_ sender: Any) {
-        //self.progressIndicator.startSpinner(withMessage: contains.loggingIn)
+        self.progressIndicator.startSpinner()
         guard let password = signInPasswordTextField.text else { return }
         guard let email = signInEmailTextField.text else { return }
         
         Auth.auth().signIn(withEmail: email, password: password) {[weak self] (data, error) in
             if error != nil {
-                //self.progressIndicator.flashSpinner(state: .error)
                 self?.showAlertMsg(title: "Error", message: error.debugDescription)
             }
             else {
@@ -116,11 +115,12 @@ class SignInViewController: RoamBaseViewController, GIDSignInUIDelegate {
                     self?.popToHomeScreen()
                 }
             }
+            self?.progressIndicator.stopSpinner(delay: 0.4)
         }
     }
     
     @IBAction func signUpButtonAction(_ sender: Any) {
-        //progressIndicator.startSpinner(withMessage: constants.registeringWait)
+        progressIndicator.startSpinner()
         if validateFields() {
             
             guard let password = signUpPasswordTextField.text else { return }
@@ -137,6 +137,7 @@ class SignInViewController: RoamBaseViewController, GIDSignInUIDelegate {
                 } else {
                     self?.showAlertMsg(title: "Error", message: "Unable to Register user")
                 }
+                self?.progressIndicator.stopSpinner(delay: 0.4)
             }
         }
     }

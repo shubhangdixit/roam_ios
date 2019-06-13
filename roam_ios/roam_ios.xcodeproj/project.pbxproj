@@ -36,6 +36,8 @@
 		21C5DB4022B17EBD00990D2D /* ProductListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */; };
 		21C5DB4522B2352400990D2D /* ActivityIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21C5DB4422B2352400990D2D /* ActivityIndicator.xib */; };
 		21C5DB4722B2360200990D2D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB4622B2360200990D2D /* ActivityIndicator.swift */; };
+		21C5DB4922B2511200990D2D /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB4822B2511200990D2D /* ProductDetailViewController.swift */; };
+		21C5DB4B22B266B600990D2D /* DescriptionAndMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C5DB4A22B266B600990D2D /* DescriptionAndMapViewController.swift */; };
 		21D50A5922A83D06003650C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A5822A83D06003650C5 /* GoogleService-Info.plist */; };
 		21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D50A6422A8416E003650C5 /* HomeViewController.swift */; };
 		21D50A6922A85142003650C5 /* defaultImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 21D50A6822A85142003650C5 /* defaultImage.jpeg */; };
@@ -95,6 +97,8 @@
 		21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListsViewController.swift; sourceTree = "<group>"; };
 		21C5DB4422B2352400990D2D /* ActivityIndicator.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicator.xib; sourceTree = "<group>"; };
 		21C5DB4622B2360200990D2D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		21C5DB4822B2511200990D2D /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		21C5DB4A22B266B600990D2D /* DescriptionAndMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionAndMapViewController.swift; sourceTree = "<group>"; };
 		21D50A5822A83D06003650C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21D50A6422A8416E003650C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "View Controllers/HomeViewController.swift"; sourceTree = "<group>"; };
 		21D50A6822A85142003650C5 /* defaultImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = defaultImage.jpeg; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				21889C6822AD2DF1008C3001 /* RoamBaseViewcontroller.swift */,
 				21372F4122B0397A00BE4AAB /* SignInViewController.swift */,
 				21C5DB3F22B17EBD00990D2D /* ProductListsViewController.swift */,
+				21C5DB4822B2511200990D2D /* ProductDetailViewController.swift */,
+				21C5DB4A22B266B600990D2D /* DescriptionAndMapViewController.swift */,
 			);
 			path = roam_ios;
 			sourceTree = "<group>";
@@ -560,10 +566,12 @@
 				21889C6422AD27F1008C3001 /* Constants.swift in Sources */,
 				21178F3322A9A0E2001103F4 /* SearchBarCell.swift in Sources */,
 				21372F4422B148E600BE4AAB /* RoamProducts.swift in Sources */,
+				21C5DB4B22B266B600990D2D /* DescriptionAndMapViewController.swift in Sources */,
 				21889C6922AD2DF1008C3001 /* RoamBaseViewcontroller.swift in Sources */,
 				21889C5E22AD21C4008C3001 /* ExtensionForAlert.swift in Sources */,
 				21889C6122AD222D008C3001 /* RoamUser.swift in Sources */,
 				21372F4622B1724B00BE4AAB /* ProductCell.swift in Sources */,
+				21C5DB4922B2511200990D2D /* ProductDetailViewController.swift in Sources */,
 				216108B022B01AA0007CFCD8 /* DataManager.swift in Sources */,
 				21D50A6522A8416E003650C5 /* HomeViewController.swift in Sources */,
 			);

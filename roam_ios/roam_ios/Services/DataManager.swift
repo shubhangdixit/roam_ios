@@ -11,6 +11,8 @@ import Firebase
 import UIKit
 import CoreData
 import GoogleSignIn
+import CoreLocation
+import MapKit
 
 
 class DataManager {
@@ -66,6 +68,26 @@ class DataManager {
         }) {
             failure()
         }
+    }
+    
+    func coordinates(forAddress address: String, completion: @escaping (CLLocation?) -> Void) {
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(address) {
+            (placemarks, error) in
+            guard error == nil else {
+                print("Geocoding error: \(error!)")
+                completion(nil)
+                return
+            }
+            completion(placemarks?.first?.location)
+        }
+    }
+    
+    func getCoordinateRegion(withLocation : CLLocationCoordinate2D) -> MKCoordinateRegion {
+        let regionRadius: CLLocationDistance = 3000
+        let coordinateRegion = MKCoordinateRegion(center: withLocation,
+                                                  latitudinalMeters: regionRadius * 2.0, longitudinalMeters: regionRadius * 2.0)
+        return coordinateRegion
     }
     
 }
