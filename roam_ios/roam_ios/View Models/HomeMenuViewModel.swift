@@ -60,16 +60,16 @@ public enum HomeOptionType : CaseIterable {
     func getControllerName() -> String {
         switch self {
         case .search:
-            return "SignInViewController"
+            return vCIdentifiers.signInVC
         case .shop:
-            return "ProductListsViewController"
+            return vCIdentifiers.productListVC
         case .cart:
-            return "SignInViewController"
+            return vCIdentifiers.signInVC
         case .signIn:
             if Auth.auth().currentUser != nil {
                 return ""
             } else {
-                return "SignInViewController"
+                return vCIdentifiers.signInVC
             }
         }      
     }

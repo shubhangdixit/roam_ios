@@ -111,8 +111,8 @@ class HomeViewController: RoamBaseViewController, UITableViewDelegate, UITableVi
     }
     
     func signOut() {
-        let alertMsg = AlertMesseges.logoutALert
-        showPermissionAlert(self, strtittle: alertMsg.rawValue, message: alertMsg.getMessage(), actionTittle: "Continue"){
+        let alertMsg = ErrorMesseges.logOutAlert
+        showPermissionAlert(self, strtittle: alertMsg.rawValue, message: alertMsg.getDetail(), actionTittle: "Continue"){
             NetworkManager.shared.signOut(success: {[weak self] (data) in
                 if let success = data as? Bool {
                     if !success {
